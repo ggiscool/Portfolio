@@ -10,79 +10,91 @@
     <script type="text/javascript" src="app.js"></script>
     <title>GG's Portfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- NAV BAR -->
     <header>
       <div class="container-fluid">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container-fluid">
             <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
               <a class="navbar-brand" href="#">GG Gonzalez</a>
             </div>
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="https://github.com/ggiscool">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/ggiscool/">LinkedIn</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#top">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://github.com/ggiscool" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ggiscool/" target="_blank">LinkedIn</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Files/Resume2018GG.docx.pdf" target="_blank">View</a></li>
+                    <li><a href="Files/Resume2018GG.docx.pdf" download>Download</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- First Container -->
+      <a id="top"></a>
       <div class="container-fluid bg-1 text-center">
         <h3 class="margin">Hello Friends</h3>
         <img src="images/gg.JPG" class="img-responsive img-circle margin" style="display:inline" alt="GG" width="350" height="350">
-        <h3>I am hungry.</h3>
+        <!-- <h3>I am hungry.</h3> -->
       </div>
 
-      <!-- Second Container -->
       <div class="container-fluid bg-2 text-center">
-        <h3 class="margin">What Am I?</h3>
-        <p>No idea ATM. Possibly human. </p>
+        <h2 class="margin">Web Developer</h2>
+        <p>A pragmatic web developer and problem solver leaving no loose-end untied through careful attention to detail. I believe that the importance of teamwork and effective communication are cornerstones of productivity and success. I love learning new skills, applying them, and teaching them to others. I strive for optimization and continuous improvement.</p>
+      </div>
+      <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">Skills</h3>
+        <p>HTML, CSS, JavaScript, jQuery, EJS, Express, Node.js, NPM, MongoDB, Angular.js, PostgreSQL, Ruby and Rails. </p>
         <!-- <a href="#" class="btn btn-default btn-lg">
-          <span class="glyphicon glyphicon-search"></span> Search
-        </a> -->
+          <span class="glyphicon glyphicon-search"></span> Search -->
+        </a>
       </div>
 
       <!-- Third Container (Grid) -->
+      <a id="projects"></a>
       <div class="container-fluid bg-3 text-center">
         <h3 class="margin">My Projects</h3><br>
         <div class="row">
           <div class="col-sm-4">
             <h4>Connect 5</h4>
-            <p>Connect 4, but better.</p>
-            <a href="https://ggiscool.github.io/Connect5/"> <img src="https://www.washingtonian.com/wp-content/uploads/2017/06/6-30-17-goat-yoga-congressional-cemetery-1-994x559.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+            <p>Connect 4, but better. A classic game made slightly more exciting by the requirement of placing an additional piece in a row to win. Made using HTML, CSS, JavaScript, and jQuery.</p>
+            <a href="https://ggiscool.github.io/Connect5/"> <img src="images/Connect5ss.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
           </div>
           <div class="col-sm-4">
-            <h4>Best Thing I've Eaten</h4>
-            <p>St. agur blue cheese cottage cheese bavarian bergkase. Stilton croque monsieur cottage cheese cheeseburger halloumi emmental cauliflower cheese dolcelatte. Say cheese mascarpone gouda say cheese cheese triangles parmesan pepper jack pecorino. Mascarpone lancashire emmental fromage cow chalk and cheese say cheese squirty cheese. Rubber cheese hard cheese paneer cheeseburger cheese slices macaroni cheese chalk and cheese feta. </p>
-            <a href="#"><img src="https://img.buzzfeed.com/buzzfeed-static/static/2016-04/16/11/campaign_images/webdr15/these-baby-goats-in-tiny-sweaters-will-make-2-28993-1460819049-5_dblbig.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
+            <h4>Time Flies When You're Eating Tons</h4>
+            <p>This a blog about the best foods I've ever eaten. Anyone can make their own account and post their favorite meals. Each post contains a photo, a caption, a blurb about the food, the location they had the food, and a link to the restaurant. Ohter features include a news feed and profile page. Made using HTML, CSS, JavaScript, jQuery, Express, Node.js, NPM, and MongoDB.</p>
+            <a href="https://timeflieswhenyoureeatingtons.herokuapp.com/"><img src="images/timeflies.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
           </div>
           <div class="col-sm-4">
             <h4>Chatter Up</h4>
-            <p>But the probability of making a six is no greater than that of rolling a seven. Worf, It's better than music. It's jazz. Some days you get the bear, and some days the bear gets you. Maybe if we felt any human loss as keenly as we feel one of those close to us, human history would be far less bloody. For an android with no feelings, he sure managed to evoke them in others. </p>
+            <p>Have you ever needed help starting conversations at office get togethers? Ever came on too strong via dating app chat that you blew the opportunity for a date? Well, look for you solution no further. Chatter up provides you with all the conversation starters you need. Simply choose a topic, click the button, and a conversation starter pops up in the topic of your choice. </p>
             <a href="#"><img src="https://i.ytimg.com/vi/O3NQzrkAhD4/maxresdefault.jpg" class="img-responsive margin" style="width:100%" alt="Image"></a>
           </div>
         </div>
       </div>
     </main>
+
+
     <footer class="container-fluid bg-4 text-center">
         <p>Made by GG Gonzalez</p>
     </footer>
 
 
 
-    <!-- JQuery -->
-    <!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
-    <!-- Bootstrap tooltips -->
-    <!-- <script type="text/javascript" src="js/popper.min.js"></script> -->
-    <!-- Bootstrap core JavaScript -->
-    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
   </body>
 </html>

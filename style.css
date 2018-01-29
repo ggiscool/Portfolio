@@ -9,3 +9,13 @@
   background-color: #2f2f2f;
   color: #ffffff;
 }
+.bg-2, .bg-3 {
+  background-color: #B0B2A3;
+}
+a {
+  text-decoration: none !important;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+}

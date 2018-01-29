@@ -1,6 +1,8 @@
 .bg-1 {
-  background-color: lavender;
-  /* background-image: url("images/annie-spratt-469223(1).jpg"); */
+  /* background-color: lavender; */
+  background-image: url("images/leaves.jpg");
+  background-position: center;
+  background-size: cover;
   /* color: #ffffff; */
 }
 .bg-4 {
